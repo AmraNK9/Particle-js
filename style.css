@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.landing-wrapper{
+    background-color:#d1dfef;
+}
+#canvas{
+    height: 250px;
+}
+.header1{
+    color: #4b80c2;
+    font-weight: bolder;
+    word-spacing:2cqb;
+}
+.header2{
+    color: #21a7e0;
+    font-weight: bold;
+}
+
+.sub-header{
+    font-weight: lighter;
+    color: #757575;
+    font-size: 8px;
+}
+
+button.apply-btn{
+    background-color: #21a7e0;
+    color: white;
+    outline: none;
+    font-size: 10px;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+}
