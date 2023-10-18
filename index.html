@@ -8,31 +8,324 @@
 		/>
 		<title>Document</title>
 		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
 			rel="stylesheet"
 			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
 			crossorigin="anonymous"
 		/>
-        <link rel="stylesheet" href="style.css">
+		<link
+			rel="stylesheet"
+			href="animate.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="style.css"
+		/>
+		<style>
+			html,
+			body {
+				position: relative;
+				height: 100%;
+			}
+
+			body {
+				background: #eee;
+				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+				font-size: 14px;
+				color: #000;
+				margin: 0;
+				padding: 0;
+			}
+
+			swiper-container {
+				background-color: rgba(255, 255, 255, 0);
+				width: 100%;
+				height: 300px;
+			}
+
+			swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				background: #ffffff00;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 0;
+			}
+
+			swiper-slide img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		</style>
 	</head>
 	<body>
-        <div class="landing-wrapper row">
-            <div class="col-md-7">
-                <div class="header-wrapper ps-4 mt-4">
-                    <h1 class="header1 mt-4">H O S T</h1>
-                    <h2 class="header2 mt-3">MYANMAR INSTITUTE</h2>
-                    <span class="sub-header mt-3 d-block">for your brighter future and career! 100% Job Guarantee!</span>
-                    
-                    <button class="apply-btn mt-3">Apply Now</button>
-                </div>
-            </div>
-            <div class="col-md-5">
-                <div id="canvas">
-                </div>
-            </div>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.18.3/dist/tsparticles.min.js"></script>
+		<div class="row">
+			<div class="noti-container">
+				<div class="noti">
+					<i
+						class="fa-solid fa-bell"
+						style="color: #dc4044"
+					></i>
+					<span class="text-white">
+						Registration for October Intake(Batch 3) is opening now!
+					</span>
+				</div>
+			</div>
+			<div class="ph-container text-white">
+				<div class="phone-1">09 785 806 735 ,</div>
+				<div class="phone-2">09 785 806 735</div>
+			</div>
+		</div>
 
+		<nav class="navbar navbar-expand-lg bg-light">
+			<div class="container-fluid">
+				<a
+					class="navbar-brand"
+					href="#"
+				>
+					<img
+						src="image/logo.png"
+						alt=""
+					/>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div
+					class="collapse navbar-collapse"
+					id="navbarSupportedContent"
+				>
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a
+								class="nav-link hmi-nav-link"
+								aria-current="page"
+								href="#"
+								>Academic Program</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link hmi-nav-link"
+								href="#"
+								>About</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link hmi-nav-link"
+								href="#"
+								>Program Fee</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link hmi-nav-link"
+								href="#"
+								>Student Experience</a
+							>
+						</li>
+					</ul>
+					<button class="nav-button">Apply Now</button>
+				</div>
+			</div>
+		</nav>
+		<div class="landing-wrapper row">
+			<div class="col-md-6">
+				<div class="header-wrapper ps-4 mt-4">
+					<h1 class="header1 mt-4">H O S T</h1>
+					<h2 class="header2 mt-3">MYANMAR INSTITUTE</h2>
+					<span class="sub-header mt-3 d-block"
+						>for your brighter future and career! 100% Job Guarantee!</span
+					>
+
+					<button class="apply-btn mt-3">Apply Now</button>
+				</div>
+			</div>
+			<div class="col-md-6 d-none d-md-block">
+				<div id="canvas"></div>
+			</div>
+		</div>
+         <!-- <div class="row">
+      <div class="hmi-nav">
+        <img src="image/logo.png" alt="" />
+        <a href="#">Academic Program</a>
+        <a href="#">About</a>
+        <a href="#">Program Fee</a>
+        <a href="#">Student Experience</a>
+        <button >Apply Now</button>
+      </div>
+    </div> -->
+
+    <div class="text-center first-head header-color">OUR CORE TEAM</div>
+    <div class="text-center teacher-second-head">
+      Professional Lectures And Industry Experts
+    </div>
+        <swiper-container
+          class="mySwiper"
+          autoplay-delay="2500"
+          init="false"
+          loop="true"
+        >
+          <swiper-slide>
+            <div class="teacher-card">
+              <img class="teacher-img" src="image/teacher.jpg" alt="" />
+              <div class="teacher-name header-color">THWIN HTOO NAUNG</div>
+              <div class="teacher-job">PROJECT MANAGER</div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="teacher-card">
+              <img class="teacher-img" src="image/teacher.jpg" alt="" />
+              <div class="teacher-name header-color">THWIN HTOO NAUNG</div>
+              <div class="teacher-job">PROJECT MANAGER</div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="teacher-card">
+              <img class="teacher-img" src="image/teacher.jpg" alt="" />
+              <div class="teacher-name header-color">THWIN HTOO NAUNG</div>
+              <div class="teacher-job">PROJECT MANAGER</div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="teacher-card">
+              <img class="teacher-img" src="image/teacher.jpg" alt="" />
+              <div class="teacher-name header-color">THWIN HTOO NAUNG</div>
+              <div class="teacher-job">PROJECT MANAGER</div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="teacher-card">
+              <img class="teacher-img" src="image/teacher.jpg" alt="" />
+              <div class="teacher-name header-color">THWIN HTOO NAUNG</div>
+              <div class="teacher-job">PROJECT MANAGER</div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="teacher-card">
+              <img class="teacher-img" src="image/teacher.jpg" alt="" />
+              <div class="teacher-name header-color">THWIN HTOO NAUNG</div>
+              <div class="teacher-job">PROJECT MANAGER</div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="teacher-card">
+              <img class="teacher-img" src="image/teacher.jpg" alt="" />
+              <div class="teacher-name header-color">THWIN HTOO NAUNG</div>
+              <div class="teacher-job">PROJECT MANAGER</div>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+    <div class="row">
+      <div class="first-second-year">
+        <div class="first-year">First Year</div>
+        <div class="second-year active">Second Year</div>
+      </div>
+    </div>
+    <div class="row it">
+      <div class="text-center first-head header-color curriculum">
+        OUR CURRICULUM
+      </div>
+      <div class="col-2 list">
+        <div class="circle first-circle">1</div>
+        <div class="doted"></div>
+        <div class="circle">2</div>
+        <div class="doted"></div>
+        <div class="circle">3</div>
+      </div>
+      <div class="col-10 it-card-container">
+        <div class="it-card">
+          <img src="image/teacher.jpg" alt="" />
+          <div class="it-card-content">
+            <div class="it-card-header first-head">IT Passport</div>
+            <div class="it-card-about">
+              Fundamental Strategy, Management, Technology.
+            </div>
+          </div>
+        </div>
+        <div class="it-card">
+          <img src="image/teacher.jpg" alt="" />
+          <div class="it-card-content">
+            <div class="it-card-header first-head">IT Passport</div>
+            <div class="it-card-about">
+              Fundamental Strategy, Management, Technology.
+            </div>
+          </div>
+        </div>
+        <div class="it-card">
+          <img src="image/teacher.jpg" alt="" />
+          <div class="it-card-content">
+            <div class="it-card-header first-head">IT Passport</div>
+            <div class="it-card-about">
+              Fundamental Strategy, Management, Technology.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script>
+		<script src="https://unpkg.com/scrollreveal"></script>
+
+		<script src="jquery.textillate.js"></script>
+		<script src="jquery.lettering.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/tsparticles@1.18.3/dist/tsparticles.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
+    <script>
+      const swiperEl = document.querySelector("swiper-container");
+      Object.assign(swiperEl, {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
+      });
+      swiperEl.initialize();
+    </script>
         <script src="app.js"></script>
-    </body>
+	</body>
 </html>
